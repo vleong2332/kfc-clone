@@ -1,0 +1,233 @@
+/*
+
+red: #E4002B;
+
+*/
+
+/* TOP BAR */
+#top_bar {
+   width: 100%;
+   height: 60px;
+   background-color: #E4002B;
+}
+@media all and (max-width: 767px) {
+   #top_bar {
+      height: 50px;
+   }
+}
+
+   /* NAVIGATION */
+   #nav_button {
+      width: 60px;
+      height: 100%;
+      float: left;
+      position: relative;
+      cursor: pointer;
+   }
+   #nav_button #nav_icon {
+      width: 24px;
+      height: 16px;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+   }
+   #nav_icon .bar {
+      width: 100%;
+      height: 2px;
+      background-color: #FFF;
+      position: absolute;
+   }
+   .bar#bar_1.nav_opened {
+      -webkit-animation-name: bar_1_move;
+      -o-animation-name: bar_1_move;
+      animation-name: bar_1_move;
+      -webkit-animation-duration: 0.3s;
+      -o-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease-out;
+      -o-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 0.1s;
+      -o-animation-delay: 0.1s;
+      animation-delay: 0.1s;
+   }
+   .bar#bar_2.nav_opened {
+      -webkit-animation-name: bar_2_move;
+      -o-animation-name: bar_2_move;
+      animation-name: bar_2_move;
+      -webkit-animation-duration: 0.4s;
+      -o-animation-duration: 0.4s;
+      animation-duration: 0.4s;
+      -webkit-animation-timing-function: ease-out;
+      -o-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+   }
+   .bar#bar_3.nav_opened {
+      -webkit-animation-name: bar_3_move;
+      -o-animation-name: bar_3_move;
+      animation-name: bar_3_move;
+      -webkit-animation-duration: 0.4s;
+      -o-animation-duration: 0.4s;
+      animation-duration: 0.4s;
+      -webkit-animation-timing-function: ease-out;
+      -o-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+   }
+   .bar#bar_2 {
+      top: calc(50% - 1px);
+      width: 50%;
+   }
+   .bar#bar_3 {
+      top: calc(100% - 2px);
+      width: 75%;
+   }
+   @keyframes bar_1_move {
+      0% {
+         top: 0;
+      }
+      50% {
+         top: calc(50% - 1px);
+         -webkit-transform: rotate(0);
+         -moz-transform: rotate(0);
+         -ms-transform: rotate(0);
+         -o-transform: rotate(0);
+         transform: rotate(0);
+      }
+      70% {
+         top: calc(50% - 1px);
+         -webkit-transform: rotate(0);
+         -moz-transform: rotate(0);
+         -ms-transform: rotate(0);
+         -o-transform: rotate(0);
+         transform: rotate(0);
+      }
+      100% {
+         top: calc(50% - 1px);
+         -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+         transform: rotate(45deg);
+      }
+   }
+   @keyframes bar_2_move {
+      0% {
+         width: 50%;
+      }
+      20% {
+         width: 100%;
+         opacity: 1;
+      }
+      50% {
+         width: 100%;
+         opacity: 1;
+      }
+      70% {
+         width: 100%;
+         opacity: 0;
+      }
+      100% {
+         width: 100%;
+         opacity: 0;
+      }
+   }
+   @keyframes bar_3_move {
+      0% {
+         width: 75%;
+      }
+      20% {
+         width: 100%;
+         top: calc(100% - 2px);
+      }
+      50% {
+         width: 100%;
+         top: calc(50% - 1px);
+         -webkit-transform: rotate(0);
+         -moz-transform: rotate(0);
+         -ms-transform: rotate(0);
+         -o-transform: rotate(0);
+         transform: rotate(0);
+      }
+      70% {
+         width: 100%;
+         top: calc(50% - 1px);
+         -webkit-transform: rotate(0);
+         -moz-transform: rotate(0);
+         -ms-transform: rotate(0);
+         -o-transform: rotate(0);
+         transform: rotate(0);
+      }
+      100% {
+         width: 100%;
+         top: calc(50% - 1px);
+         -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+         transform: rotate(-45deg);
+      }
+   }
+   @media all and (max-width: 767px) {
+      #nav_button #nav_icon {
+         left: 10px;
+      }
+   }
+
+   /* LOGO */
+   #main_logo {
+      height: 100%;
+      width: 182px;
+      margin: 0 auto;
+      position: relative;
+   }
+   #main_logo a {
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      background-image: url('img/kfc-logo.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+   }
+   @media all and (max-width: 767px) {
+      #main_logo {
+         width: 58px;
+      }
+      #main_logo a {
+         background-image: url('img/kfc-logo-mobile.png');
+         height: 18px;
+      }
+   }
+
+#social {
+   height: 100%;
+   float: right;
+}
